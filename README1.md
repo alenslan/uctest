@@ -28,7 +28,10 @@
   * [14.畅销榜单接口](#14畅销榜单接口)
   * [15.榜单详情接口](#15榜单详情接口)
   * [16.壁纸列表接口](#16壁纸列表接口)
-
+  * [17.表情包系列列表接口](#17表情包系列列表接口)
+  * [18.单表情包列表接口](#18单表情包列表接口)
+  * [19.表情包分享计数接口](#19表情包分享计数接口)
+  
 #### **规格说明**
 |/|说明|
 |-----|-------|
@@ -543,6 +546,39 @@ $data数据格式
    ...
 ]
 ```
+
+# 17.表情包系列列表接口
+
+请求地址：{server_host}/expression
+
+|Request|Method : GET||
+|---|---|---|
+|参数名|类型|说明|
+|page|int|页码|
+|size|int|每页条数(默认18条)|
+|**Respone**|**DataType : json**||
+|返回数据格式(列表格式)|||
+|name|string|表情名|
+|imgURL|string|表情地址|
+|preImgURL|string|顶图|
+|eId|int|表情ID|
+```
+[
+    {
+        "name":"玉米仔",
+        "imgURL":"http:\/\/7xismb.com2.z0.glb.qiniucdn.com\/android\/icon\/91\/rr\/3964c7be1fab4cfba0a115239615844e.png",
+        "preImgURL":"http:\/\/7xismb.com2.z0.glb.qiniucdn.com\/android\/icon\/8h\/q7\/3964c7be1fab4cfba0a115239615844e.jpg",
+        "eId":"9"
+    },
+    {
+        "name":"张小盒",
+        "imgURL":"http:\/\/7xismb.com2.z0.glb.qiniucdn.com\/android\/icon\/hv\/Z5\/2121d2a096004d5d9357002f5e82bc7f.gif",
+        "preImgURL":"http:\/\/7xismb.com2.z0.glb.qiniucdn.com\/android\/icon\/if\/0p\/2121d2a096004d5d9357002f5e82bc7f.jpg",
+        "eId":"8"
+    },
+ ]
+```
+
 <br>
 <br>
 <br>
