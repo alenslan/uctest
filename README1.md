@@ -525,7 +525,7 @@ $data数据格式
 |---|---|---|
 |参数名|类型|说明|
 |page|int|页码|
-|size|int|每页条数(默认18条)|
+|size|int|每页条数(默认20条)|
 |**Respone**|**DataType : json**||
 |返回数据格式(列表格式)|||
 |caption|string|图片名|
@@ -579,6 +579,33 @@ $data数据格式
  ]
 ```
 
+# 18.单表情包列表接口
+
+请求地址：{server_host}/expression/{id}
+
+|Request|Method : GET||
+|---|---|---|
+|参数名|类型|说明|
+|page|int|页码|
+|size|int|每页条数(默认18条)|
+|**Respone**|**DataType : json**||
+|返回数据格式|||
+|imgURL|string|表情图|
+|shareNum|string|分享数目|
+|name|string|表情名称|
+|preImgURL|string|缩略图|
+|list|list|子系列表情列表|
+|-eName|string|表情名称|
+|-imgURL|string|表情图|
+|-preImgURL|string|缩略图|
+
+# 19.表情包分享计数接口
+
+请求地址：{server_host}/expression/{id}/share
+
+|Request|Method : POST||
+|返回数据格式|||
+|message|string|返回信息|
 <br>
 <br>
 <br>
