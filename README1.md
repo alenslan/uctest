@@ -604,8 +604,10 @@ $data数据格式
 请求地址：{server_host}/expression/{id}/share
 
 |Request|Method : POST||
+|---|---|---|
 |返回数据格式|||
 |message|string|返回信息|
+
 <br>
 <br>
 <br>
