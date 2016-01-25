@@ -27,7 +27,8 @@
   * [13.收费榜单接口](#13收费榜单接口)
   * [14.畅销榜单接口](#14畅销榜单接口)
   * [15.榜单详情接口](#15榜单详情接口)
-  
+  * [16.壁纸列表接口](#16壁纸列表接口)
+
 #### **规格说明**
 |/|说明|
 |-----|-------|
@@ -513,7 +514,35 @@ $data数据格式
              {server_host}/tops/981791837
              
 
+# 16.壁纸列表接口
 
+请求地址：{server_host}/wallpaper
+
+|Request|Method : GET||
+|---|---|---|
+|参数名|类型|说明|
+|page|int|页码|
+|size|int|每页条数(默认18条)|
+|**Respone**|**DataType : json**||
+|返回数据格式(列表格式)|||
+|caption|string|图片名|
+|thumbURL|string|缩略图|
+|originalURL|string|大图|
+```
+[
+   {
+      "caption":"暖兔",
+      "thumbURL":"http:\/\/yumi2014.b0.upaiyun.com\/bz\/2016\/1\/145344563469400c99e16649e4a6533f27e248ee7b.jpg",
+      "originalURL":"http:\/\/yumi2014.b0.upaiyun.com\/bz\/2016\/1\/145344564927472081d1d5491a96475e24b60862fa.jpg"
+   },
+   {
+      "caption":"黄豆",
+      "thumbURL":"http:\/\/yumi2014.b0.upaiyun.com\/bz\/2016\/1\/145344582788885a5c0c6e4eeeafc4c2756ea31d0e.jpg",
+      "originalURL":"http:\/\/yumi2014.b0.upaiyun.com\/bz\/2016\/1\/145344584001858af848db467b93e041e4a7e6a8d2.jpg"
+   },
+   ...
+]
+```
 <br>
 <br>
 <br>
