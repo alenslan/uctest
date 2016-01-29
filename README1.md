@@ -614,10 +614,13 @@ $data数据格式
 
 |Request|Method : POST||
 |---|---|---|
-||---|设备号|
 ||||
 |返回数据格式|||
 |message|string|返回信息|
+|code|string|代码[失败是error,成功是ok]|
+|data|json|当成功时返回参数|
+|-|string|-|
+|-|string|-|
 
 <br>
 <br>
