@@ -610,7 +610,7 @@ $data数据格式
 |message|string|返回信息|
 
 # 20.检测设备是否领取苹果账号接口
-请求地址：{server_host}/account/appst/used
+请求地址：{server_host}/account/appst/check
 
 |Request|Method : POST||
 |---|---|---|
