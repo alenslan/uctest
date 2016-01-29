@@ -606,6 +606,7 @@ $data数据格式
 
 |Request|Method : POST||
 |---|---|---|
+|**Respone**|**DataType : json**||
 |返回数据格式|||
 |message|string|返回信息|
 
@@ -615,6 +616,7 @@ $data数据格式
 |Request|Method : POST||
 |---|---|---|
 ||||
+|**Respone**|**DataType : json**||
 |返回数据格式|||
 |message|string|返回信息|
 |code|string|代码[失败是error,成功是ok]|
